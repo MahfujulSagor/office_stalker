@@ -15,8 +15,8 @@ const Room = ({ roomType }: RoomProps) => {
         ? "Work Room 1"
         : "Work Room 2"; // For now hardcoded, but can be dynamic based on props or state in the future.
   return (
-    <div className="flex-1 flex flex-col rounded-md p-3 relative shadow-xl border border-gray-300">
-      <h2 className="text-lg font-semibold mb-2">{room}</h2>
+    <div className="flex-1 flex flex-col rounded-md p-3 relative shadow-lg border border-gray-300">
+      <h2 className="text-lg font-semibold mb-2 text-center">{room}</h2>
 
       {/* DEVICE AREA */}
       <div className="flex-1 relative h-full rounded-sm">
