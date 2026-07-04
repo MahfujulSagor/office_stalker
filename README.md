@@ -15,7 +15,7 @@ Office Stalker is a full-stack real-time monitoring and automation dashboard bui
 
 ### 🤖 Discord Bot Integration (`bot.js`)
 
-- **`!status` / `!usage` Commands**: Pulls active infrastructure matrices directly from the Next.js API layer to update administrators in text channels.
+- **`!status` Commands**: Pulls active infrastructure matrices directly from the Next.js API layer to update administrators in text channels.
 - **Proactive Overtime Alerts**: Triggers automated, highly legible Markdown reports via a Discord Webhook when the office simulation stops, breaking down active infrastructure counts globally and by room.
 - **`!stop` Remote Emergency Override**: Allows authorized channel members to send an instant shutdown instruction via chat, turning off all equipment across the office (dropping load to 0W) and triggering a public confirmation log identifying the controller's username.
 
