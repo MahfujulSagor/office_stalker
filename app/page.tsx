@@ -1,6 +1,7 @@
 import RightSidebar from "./components/rightSidebar";
 import Room from "./components/room";
 import RoomControl from "./components/roomControl";
+// import { startSimulator } from "./lib/sumilator";
 
 export default function Page() {
   return (

@@ -21,6 +21,7 @@ const Room = ({ roomType }: RoomProps) => {
       {/* DEVICE AREA */}
       <div className="flex-1 relative h-full rounded-sm">
         {/* LIGHTS */}
+
         {/* 1 */}
         <div className="illuminate absolute top-20 left-20 w-6 h-6 rounded-full" />
         {/* 2 */}
@@ -29,6 +30,7 @@ const Room = ({ roomType }: RoomProps) => {
         <div className="illuminate absolute bottom-12 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full" />
 
         {/* FANS */}
+
         {/* 1 */}
         <div className="absolute top-1/5 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28">
           <Image src={Fan} alt="Fan1" className="w-full h-full animate-spin" />
@@ -56,7 +58,6 @@ const Room = ({ roomType }: RoomProps) => {
             />
           </div>
         )}
-
       </div>
     </div>
   );
