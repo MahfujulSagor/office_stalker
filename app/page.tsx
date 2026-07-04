@@ -1,11 +1,13 @@
+import RightSidebar from "./components/rightSidebar";
 import Room from "./components/room";
+import RoomControl from "./components/roomControl";
 
 export default function Page() {
   return (
     <div className="h-screen w-full  flex flex-col">
       {/* HEADER */}
       <header className="h-14 flex items-center justify-center px-6">
-        <h1 className="text-4xl text-center font-bold">
+        <h1 className="text-5xl text-center font-bold">
           Office Stalker Dashboard
         </h1>
       </header>
@@ -23,27 +25,17 @@ export default function Page() {
             {/* ROOM 3 */}
             <Room roomType="work2" />
           </div>
+
+          {/* BOTTOM PANEL */}
+          <div className="h-50 flex gap-4 ">
+            <RoomControl />
+            <RoomControl />
+            <RoomControl />
+          </div>
         </div>
 
         {/* RIGHT SIDEBAR */}
-        {/* <div className="w-[320px] border-l  p-3 flex flex-col gap-3">
-          <div className="h-24 border  rounded p-2">Device Status</div>
-
-          <div className="h-24 border  rounded p-2">Power Usage</div>
-
-          <div className="h-24 border rounded p-2">Alerts</div>
-
-          <div className="flex-1 border  rounded p-2">Room Summary</div>
-        </div> */}
-      </div>
-
-      {/* BOTTOM PANEL */}
-      <div className="h-40 flex gap-3 p-3">
-        <div className="flex-1 border border-gray-300 rounded p-2 shadow-lg">Graph Placeholder</div>
-
-        <div className="flex-1 border border-gray-300 rounded p-2 shadow-lg">Timeline Placeholder</div>
-
-        <div className="flex-1 border border-gray-300 rounded p-2 shadow-lg">Logs Placeholder</div>
+        <RightSidebar />
       </div>
     </div>
   );
