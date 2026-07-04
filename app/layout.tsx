@@ -32,7 +32,20 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {/* Mobile/Tablet Viewport Block Screen */}
+        <div className="flex xl:hidden fixed inset-0 bg-slate-900 text-white flex-col justify-center items-center p-6 text-center z-50">
+          <span className="text-4xl mb-4">🖥️</span>
+          <h1 className="text-xl font-bold mb-2">Desktop Access Only</h1>
+          <p className="text-sm text-slate-400 max-w-xs">
+            The Office Stalker ecosystem dashboard requires a desktop layout
+            monitor matrix. Please switch over to your PC or Mac.
+          </p>
+        </div>
+
+        {/* Desktop Viewport - App renders normally here */}
+        <div className="hidden xl:block">{children}</div>
+      </body>
     </html>
   );
 }
